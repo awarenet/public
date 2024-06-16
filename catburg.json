@@ -1,0 +1,155 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Awarenet",
+                "abbreviation": "AWARE",
+                "full": "Awarenet Source Book",
+                "authors": [
+                    "hoba"
+                ],
+                "convertedBy": [
+                    "hoba"
+                ],
+                "version": "2024.06.15"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "subclass": [
+        {
+            "name": "Cat Burglar",
+            "fluff": {"entries": [
+                "As a cat burglar, you’ve honed your ability to enter closed or restricted areas, drawing upon a tradition first developed among the catfolk, who often are innately curious and driven to learn what wonders, riches, or unusual friends and foes lie beyond their reach or just out of sight. In ages past, some allowed this inquisitiveness to guide them toward a rogue’s life devoted to bridging that gap by breaking into any and all structures, dungeons, or walled-off regions that prevented them from satisfying their curiosity.",
+                "So successful were these first catfolk burglars that other rogues soon began emulating their techniques.",
+                "Walls become but minor inconveniences once you work out the best methods of scaling them and learn to mitigate injuries from falls. In time, cat burglars become adept at breaching any openings they find; after all, if a door was not meant to be opened, why would it have been placed there? Those who devote a lifetime to such endeavors eventually learn to spot and bypass even the cleverest traps and hidden doors, including those disguised or warded by magic.",
+                "Some cat burglars use their abilities to help themselves to the contents of treasure vaults or uncover hidden secrets, others become an integral part of an adventuring party that values skillful infiltration techniques, and still others get the jump on their foes by taking the fight to them where and when they least expect it, up to and including private bed chambers or inner sanctums.",
+                "You’ll likely end up someplace you’re not supposed to be, but those are the places most worth visiting!"
+            ]},
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "shortName": "Burg",
+            "page": 1,
+            "subclassFeatures": [
+                "Cat Burglar|Rogue||Burg|Awarenet|3",
+                "Cats Eye|Rogue||Burg|Awarenet|9",
+                "Breaking and Entering|Rogue||Burg|Awarenet|13",
+                "Master Burglar|Rogue||Burg|Awarenet|18"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Cat Burglar",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 3,
+            "entries": [
+                "Cat Burglar",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Up, Over and In|Rogue||Burg|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Artful Dodger|Rogue||Burg|Awarenet|3"
+                }
+            ]
+        },
+        {
+            "name": "Up, Over and In",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Beginning when you choose this archetype at 3rd level, you have a climbing speed equal to your walking speed. If you already have a climbing speed equal to or greater than your walking speed, it increases by 5 feet. In addition, when you are falling, you can use your reaction to soften the fall. You reduce the falling damage you take by an amount equal to your proficiency bonus + your rogue level. You don’t land prone, unless the damage you take from the fall would reduce you to less than half your hit point maximum."
+            ]
+        },
+        {
+            "name": "Artful Dodger",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "At 3rd level, alert to the dangers posed by hidden traps and wards, you have advantage on saving throws made to avoid or resist a trap or a magic effect with a trigger, such as the glyph of warding spell, and you have resistance to the damage dealt by such effects."
+            ]
+        },
+        {
+            "name": "Cats Eye",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 9,
+            "header": 1,
+            "entries": [
+                "Starting at 9th level, you have advantage on Wisdom (Perception) or Intelligence (Investigation) checks made to find or disarm traps, locate secret or hidden doors, discern the existence of an illusion, or spot a glyph of warding. You can also search for traps while traveling at a normal pace, instead of only while at a slow pace."
+            ]
+        },
+        {
+            "name": "Breaking and Entering",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 13,
+            "header": 1,
+            "entries": [
+                "At 13th level, when you make an attack against a door, gate, window, shutters, bars, or similar object or structure that is blocking or barring an egress, you have advantage on the attack roll, and you can add your Sneak Attack damage on a hit. You can choose for this damage to be audible out to a range of 100 feet or to be audible only within 5 feet of the point where you hit the object or structure. Similarly, you can choose for this damage to appear more or less impactful than it actually is, such as neatly carving a hole for you to squeeze through a wall or window or bursting a door off its hinges. Your expertise at deftly dismantling crafted works extends to constructs and undead. You don’t need advantage on the attack roll to use your Sneak Attack feature against constructs and undead. As normal, you can’t use Sneak Attack if you have disadvantage on the attack roll"
+            ]
+        },
+        {
+            "name": "Master Burglar",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 18,
+            "header": 1,
+            "entries": [
+                "At 17th level, you can slip past a fire-breathing statue unscathed or tread lightly enough to not set off a pressure plate. The first time on each of your turns that you would trigger a trap or magic effect with a trigger, such as the glyph of warding spell, you can choose to not trigger it. As a bonus action, you can choose a number of creatures equal to your proficiency bonus that you can see within 30 feet of you and grant them the effects of this feature for 1 hour. Once you grant this feature to others, you can’t do so again until you finish a long rest."
+            ]
+        }
+        
+    ],
+    "foundrySubclassFeature": [
+        {
+            "name": "Up, Over and In",
+            "source": "Awarenet",
+            "className": "Rogue",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Burg",
+            "level": 3,
+            "effects": [
+                {
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "data.attributes.movement.climb",
+                            "mode": "UPGRADE",
+                            "value": "@attributes.movement.walk"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
