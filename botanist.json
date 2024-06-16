@@ -1,0 +1,479 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Awarenet",
+                "abbreviation": "AWARE",
+                "full": "Awarenet Source Book",
+                "authors": [
+                    "LivingstoneLibraryPress"
+                ],
+                "convertedBy": [
+                    "hoba"
+                ],
+                "version": "2024.06.15"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0,
+        "optionalFeatureTypes": {
+            "OF:HORT": "Botanist Horticulture"
+        }
+    },
+    "subclass": [
+        {
+            "name": "Botanist",
+            "fluff": {
+                "entries": [
+                    "A Botanist is an expert in the study of plant life, particularly those of the magical variety. Whereas artificers who specialize as alchemists are known for combining ingredients to create elixirs and potions, Botanists draw upon the magic of unrefined plant life to produce both medicinal cures and debilitating attacks. Many Botanists act as full-time teachers and professors, eager to pass on their knowledge to future generations."
+                ]
+            },
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "shortName": "Botanist",
+            "page": 1,
+            "subclassFeatures": [
+                "Level 3 Botanist|Artificer|TCE|Botanist|Awarenet|3",
+                "Herbal Remedy|Artificer|TCE|Botanist|Awarenet|5",
+                "Improved Horticulture|Artificer|TCE|Botanist|Awarenet|9",
+                "Botanical Mastery|Artificer|TCE|Botanist|Awarenet|15"
+            ],
+            "additionalSpells": [
+                {
+                    "known": {
+                        "3": [
+                            {
+                                "choose": {
+                                    "from": [
+                                        "thorn whip#c",
+                                        "druidcraft#c"
+                                    ],
+                                    "count": 1
+                                }
+                            }
+                        ]
+                    },
+                    "prepared": {
+                        "3": [
+                            "entangle",
+                            "goodberry"
+                        ],
+                        "5": [
+                            "spike growth",
+                            "barkskin"
+                        ],
+                        "9": [
+                            "plant growth",
+                            "speak with plants"
+                        ],
+                        "13": [
+                            "grasping vine",
+                            "freedom of movement"
+                        ],
+                        "17": [
+                            "tree stride",
+                            "commune with nature"
+                        ]
+                    }
+                }
+            ],
+            "foundryAdvancement": [
+                {
+                    "type": "ScaleValue",
+                    "configuration": {
+                        "identifier": "horticulture",
+                        "type": "number",
+                        "scale": {
+                            "3": {
+                                "value": 1
+                            },
+                            "9": {
+                                "value": 2
+                            }
+                        }
+                    },
+                    "title": "Horticulture Experience"
+                }
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Level 3 Botanist",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "entries": [
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Botanist Spells|Artificer|TCE|Botanist|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Herbalist Tool Proficiency|Artificer|TCE|Botanist|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Enhanced Horticulture|Artificer|TCE|Botanist|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Student Of Nature|Artificer|TCE|Botanist|Awarenet|3"
+                }
+            ]
+        },
+        {
+            "name": "Botanist Spells",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You always have certain spells prepared after you reach particular levels in this class, as shown in the Botanist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.",
+                {
+                    "type": "table",
+                    "caption": "Botanist Spells",
+                    "colLabels": [
+                        "Artificer Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell entangle}, {@spell goodberry}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell barkskin}, {@spell spike growth}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell plant growth}, {@spell speak with plants}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell freedom of movement}, {@spell grasping vine}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell commune with nature}, {@spell tree stride}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Student Of Nature",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your study of plants and plant-based magic has paid off in two ways:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You gain proficiency in the Nature skill. If you already have this skill proficiency, you gain proficiency with one other skill of your choice from the list of skills available to artificers at 1st level.",
+                        "You learn the druidcraft or thorn whip cantrip (your choice). This cantrip counts as an artificer cantrip for you, but doesn't count against the number of artificer cantrips you know."
+                    ]
+                }
+            ],
+            "skillProficiencies": [
+                {
+                    "nature": true
+                }
+            ]
+        },
+        {
+            "name": "Enhanced Horticulture",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You've learned how to magically grow and enhance plants of all sorts to suit your needs. Using an herbalism kit, you can use an action to produce one of the following effects of your choice. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.",
+                "{@subclassFeature Aromatic Herbs|Artificer|TCE|Botanist|Awarenet|3}",
+                "{@subclassFeature Poisonous Plant|Artificer|TCE|Botanist|Awarenet|3}",
+                "{@subclassFeature Seed Barrage|Artificer|TCE|Botanist|Awarenet|3}",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Aromatic Herbs|Artificer|TCE|Botanist|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Poisonous Plant|Artificer|TCE|Botanist|Awarenet|3"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Seed Barrage|Artificer|TCE|Botanist|Awarenet|3"
+                }
+            ]
+        },
+        {
+            "name": "Herbalist Tool Proficiency",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You gain proficiency with herbalism kits. If you already have this tool proficiency, you gain proficiency with one type of artisan's tools of your choice."
+            ],
+            "toolProficiencies": [
+                {
+                    "herbalism kit": true
+                }
+            ]
+        },
+        {
+            "name": "Herbal Remedy",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 5,
+            "header": 1,
+            "entries": [
+                "You've developed a detailed knowledge of herbs and their many uses, enhancing the healing you produce through them. Whenever you cast a spell that restores hit points using your herbalism kit as the spellcasting focus, you can enhance your spell in one of the following ways:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You restore an additional number of hit points equal to your Intelligence modifier (minimum of +1).",
+                        "You also end either one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, or poisoned."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Improved Horticulture",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 9,
+            "header": 1,
+            "entries": [
+                "You've learned new ways to cultivate the plants you magically grow:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The healing of your Aromatic Herbs increases to 2d8 + your Intelligence modifier (minimum of 2).",
+                        "The damage of your Poisonous Plant increases to 2d8 and can't be reduced in any way.",
+                        "The damage of your Seed Barrage increases to {@dice 4d8}."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Botanical Mastery",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                "You've accumulated a wealth of experience and knowledge about plants, granting you access to rarer specimens that you can magically grow. The following effects are added to your list of options for your Enhanced Horticulture:",
+                "{@subclassFeature Parasitic Spores|Artificer|TCE|Botanist|Awarenet|15}",
+                "{@subclassFeature Soothing Lavender|Artificer|TCE|Botanist|Awarenet|15}",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Parasitic Spores|Artificer|TCE|Botanist|Awarenet|15"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Soothing Lavender|Artificer|TCE|Botanist|Awarenet|15"
+                }
+            ]
+        },
+      
+        {
+            "name": "Aromatic Herbs",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You conjure a Small aromatic plant in an unoccupied space on a solid surface that you can see within 30 feet of you. The plant occupies its space. Creatures of your choice that end their turn within 10 feet of the plant regain hit points equal to 1d8 + your Intelligence modifier (minimum of 1). The plant can heal a number of times equal to your proficiency bonus. After healing that number of times, the plant shrivels and dies."
+            ],
+            "consumes": {
+                "name": "Enhanced Horticulture",
+                "amount": 1
+            },
+            "foundrySystem": {
+                "ability": "int",
+                "activation.type": "action",
+                "activation.cost": 1,
+                "actionType": "heal",
+                "damage.parts": [
+                    [
+                        "max(@scale.botanist.horticulture, (@scale.botanist.horticulture)d8 + @abilities.int.mod)",
+                        "healing"
+                    ]
+                ],
+                "range": {
+                    "value": 30,
+                    "units": "ft"
+                }
+            }
+        },
+        {
+            "name": "Poisonous Plant",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You conjure a vibrantly colored flower at a point that you can see within 30 feet of you, which then releases a burst of poisonous powder. Each creature within 10 feet of the flower must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes 1d8 poison damage and becomes poisoned until the start of your next turn. On a successful save, a creature takes half as much damage and isn't poisoned. The flower then withers and dies."
+            ],
+            "consumes": {
+                "name": "Enhanced Horticulture",
+                "amount": 1
+            },
+            "foundrySystem": {
+                "activation.type": "action",
+                "activation.cost": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "(@scale.botanist.horticulture)d8",
+                        "poison"
+                    ]
+                ],
+                "save.ability": "con",
+                "save.scaling": "spell",
+                "range": {
+                    "value": 30,
+                    "units": "ft"
+                }
+            }
+        },
+        {
+            "name": "Seed Barrage",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "You conjure a barrage of explosive seeds in a 10-foot-radius, 30-foot-high cylinder centered on a point that you can see within 30 feet of you. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 thunder damage on a failed save or half as much damage on a successful one."
+            ],
+            "foundrySystem": {
+                "activation.type": "action",
+                "activation.cost": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "(2 * @scale.botanist.horticulture)d8",
+                        "thunder"
+                    ]
+                ],
+                "save.ability": "dex",
+                "save.scaling": "spell",
+                "range": {
+                    "value": 30,
+                    "units": "ft"
+                }
+            },
+            "consumes": {
+                "name": "Enhanced Horticulture",
+                "amount": 1
+            }
+        },
+        {
+            "name": "Parasitic Spores",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                " You conjure a parasitic mushroom at a point that you can see within 30 feet of you, which then releases a burst of spores. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw against your spell save DC. On a failed save, a creature takes 4d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. On a successful save, a creature takes half as much damage."
+            ],
+            "foundrySystem": {
+                "ability": "int",
+                "activation.type": "action",
+                "activation.cost": 1,
+                "range": {
+                    "value": 30,
+                    "units": "ft"
+                },
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "4d6",
+                        "necrotic"
+                    ]
+                ],
+                "save.ability": "con",
+                "save.scaling": "spell"
+            },
+            "consumes": {
+                "name": "Enhanced Horticulture",
+                "amount": 1
+            }
+        },
+        {
+            "name": "Soothing Lavender",
+            "source": "Awarenet",
+            "className": "Artificer",
+            "classSource": "TCE",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Botanist",
+            "level": 15,
+            "header": 1,
+            "entries": [
+                " You conjure a lavender plant at a point that you can see within 30 feet of you, which then releases a soothing aroma. Each creature within 10 feet of the lavender must succeed on a Constitution saving throw against your spell save DC or fall unconscious until the start of your next turn, the sleeper takes damage, or a creature uses an action to shake the sleeper awake. The lavender then withers and dies."
+            ],
+            "foundrySystem": {
+                "ability": "int",
+                "activation.type": "action",
+                "activation.cost": 1,
+                "range": {
+                    "value": 30,
+                    "units": "ft"
+                },
+                "actionType": "save",
+                "save.ability": "con",
+                "save.scaling": "spell"
+            },
+            "consumes": {
+                "name": "Enhanced Horticulture",
+                "amount": 1
+            }
+        }
+    ]
+}
