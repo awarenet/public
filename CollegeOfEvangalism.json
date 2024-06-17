@@ -1,0 +1,106 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "Awarenet",
+                "abbreviation": "AWARE",
+                "full": "Awarenet Source Book",
+                "authors": [
+                    "hoba"
+                ],
+                "convertedBy": [
+                    "hoba"
+                ],
+                "version": "2024.06.15"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "subclass": [
+        {
+            "name": "College Of Evangelism",
+            "fluff": {
+                "entries": [
+                    "The College of Evangelism attracts all bards who are able to truly work a crowd. Whether they believe in the words they preach is of no consequence to them, as their audience still draws faith from their delivery. With enough practice and preaching, they may even attract the attention of the gods they evangelize for."
+                ]
+            },
+            "source": "Awarenet",
+            "className": "Bard",
+            "classSource": "PHB",
+            "shortName": "Evangelist",
+            "page": 1,
+            "subclassFeatures": [
+                "Inspiring Sermon|Bard||Evangelist|Awarenet|3",
+                "Student Of Faith|Bard||Evangelist|Awarenet|3",
+                "Preach The Gospel|Bard||Evangelist|Awarenet|6",
+                "Divine Inspiration|Bard||Evangelist|Awarenet|14"
+            ]
+           
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Inspiring Sermon",
+            "source": "Awarenet",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Evangelist",
+            "level": 3,
+            "entries": [
+                "Your empassioned words soothe the the soul when reflected upon. When you join the College of Evangelism at 3rd level your Bardic Inspiration is enhanced Whenever an ally rolls a Bardic Inspiration dice, they also gain that many temporary hit points."
+            ]
+        },
+        {
+            "name": "Student Of Faith",
+            "source": "Awarenet",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Evangelist",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                "Your study has expanded to include divine sacraments, rituals, and prayers. Starting at 3rd level whenever you learn a new spell, that spell may be from the cleric spell list- You cannot have more than one cleric per spell level. Charisma is considered your spellcasting ability for spells chosen this way. In addition, you may use Charisma modifier for Religion checks instead of Intelligence."
+            ]
+        },
+        {
+            "name": "Preach The Gospel",
+            "source": "Awarenet",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Evangelist",
+            "level": 6,
+            "header": 1,
+            "entries": [
+                "You feel the desire to spread the word of your worship to anyone who will listen.",
+                "At 6th level whenever you make a Persuasion, Deception, or Intimidation check, you may add your Wisdom modifier with a minimum of 1.",
+                "As an action, you may attempt to sway a humanoid through inspired words and emphatic belief. As long as the target isn't hostile and can understand you, you may make a Religion check vs the target's Insight- If your roll is higher, the target swayed by your preaching and considers you a friend for 24 hours - It wont harm any other creatures, and will not place itself in harm's way for any reason, and will leave your service if attacked or made hostile.",  
+                "You may make another Religion check vs the target's Insight check at the end of the 24 hours to keep them swayed. If the target has failed 3 Insight checks as the result of this ability, it becomes permanently swayed to your until it is harmed or put in harm's way by you or an ally."
+            ],
+            "foundrySystem": {
+                "activation.typ": "action",
+                "activation.cost": 1
+            }
+        },
+        {
+            "name": "Divine Inspiration",
+            "source": "Awarenet",
+            "className": "Bard",
+            "classSource": "PHB",
+            "subclassSource": "Awarenet",
+            "subclassShortName": "Evangelist",
+            "level": 14,
+            "header": 1,
+            "entries": [
+                "As reward for your devoted ministry, you are struck with a renewed desire to spread the word",
+                "At 14th level, whenever an ally rolls a Bardic Inspiration dice, they may roll two and use the higher result.",
+                "In addition, as an action you beseech the divine for a new font of energy'. If do you, you regain a number of expended uses of Bardic Inspiration equal to your Wisdom modifier.",
+                "Once you use this feature, it cannot be used until you finish a long rest"
+            ]
+        }
+    ]
+}
